@@ -1,0 +1,35 @@
+.customer-toggle {
+  display: inline-flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+
+  .toggle-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: clamp(0.625rem, 0.1923rem + 1.2019vw, 0.9375rem);
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+
+    &.active {
+      background-color: white;
+      color: #ecac00;
+      border: 0.5px solid #ecac00;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    &:not(.active) {
+      color: #000;
+    }
+
+    &:hover:not(.active) {
+      color: #ecac00;
+    }
+  }
+}

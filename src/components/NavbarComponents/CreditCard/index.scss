@@ -1,0 +1,13 @@
+.credit-card {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    .card {
+      margin: 1.5px 0;
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
