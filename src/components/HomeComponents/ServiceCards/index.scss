@@ -1,0 +1,132 @@
+.services {
+  padding: 20px 0;
+  .services-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    .service-card-left {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: #f4c542;
+      border-radius: 10px;
+      padding: 20px;
+      position: relative;
+
+      .service-card.large {
+        .content {
+          position: absolute;
+          top: 0;
+          right: 25px;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+      h3 {
+        margin-top: 20px;
+        font-weight: 600;
+        font-size: clamp(14px, 4vw, 24px);
+        color: #000;
+      }
+
+      .service-btn {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        background: #fff;
+        border: none;
+        padding: 5px 20px;
+        border-radius: 9px;
+        cursor: pointer;
+        .service-icon {
+          font-size: 16px;
+          color: #f4c542;
+        }
+      }
+    }
+
+    .service-card-right {
+      flex: 2;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+
+      .service-card {
+        position: relative;
+        background-color: #f4c542;
+        border-radius: 10px;
+        padding: 20px;
+        height: 100%;
+        flex: 1;
+
+        h3 {
+          color: #000;
+          font-weight: 600;
+          font-size: clamp(14px, 4vw, 24px);
+        }
+
+        .service-btn {
+          position: absolute;
+          bottom: 20px;
+          right: 20px;
+          background: #fff;
+          border: none;
+          padding: 5px 20px;
+          // padding: 8px
+          border-radius: 9px;
+          cursor: pointer;
+          .service-icon {
+            font-size: 16px;
+            color: #f4c542;
+          }
+        }
+      }
+
+      > div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      .service-card-left {
+        flex: none;
+        order: 1;
+        width: 100%;
+      }
+      .service-card-right {
+        flex: none;
+        order: 2;
+        flex-direction: column;
+        gap: 20px;
+
+        > div {
+          flex-direction: row;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      .service-card-left,
+      .service-card-right {
+        width: 100%;
+      }
+
+      .service-card-right {
+        flex-direction: column;
+        gap: 20px;
+
+        > div {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

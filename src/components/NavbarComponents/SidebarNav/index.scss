@@ -1,0 +1,49 @@
+.sidebar-menu {
+  position: fixed;
+  top: 0;
+  right: -450px;
+  height: 100%;
+  width: 290px;
+  visibility: hidden;
+  opacity: 0;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+  display: none;
+
+  &.active {
+    right: 0;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .sidebar-top {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    .close-menu {
+      font-size: 35px;
+    }
+  }
+
+  .side-menu-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 50vh;
+    padding: 0 20px;
+
+    .sidemenu-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .sidebar-menu {
+    display: block;
+  }
+}
