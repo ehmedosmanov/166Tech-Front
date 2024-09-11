@@ -1,15 +1,15 @@
 const navbarItems = [
     { name: "Əsas səhifə", path: "/" },
-    { name: "Şirkətimiz", path: "/about" },
+    { name: "Komandamız", path: "/our-team" },
     {
         name: "Xidmətlər",
         path: "#",
         dropdown: [
             { name: "Haqqımızdaa", path: "/about-us" },
-            { name: "Bizim Komanda", path: "/our-team" },
+            { name: "Şirkətimiz", path: "/company" },
         ],
     },
-    { name: "Blog", path: "/blog" },
+    { name: "Bizim Media", path: "/our-media" },
     { name: "Əlaqə", path: "/contact" },
 ];
 

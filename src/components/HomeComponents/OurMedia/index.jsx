@@ -2,6 +2,7 @@ import React from "react";
 import SectionTitle from "../../UI/SectionTitle";
 import "./index.scss";
 import MediaCard from "../../UI/MediaCard";
+import Button from "../../UI/Button";
 
 const OurMedia = () => {
   return (
@@ -14,7 +15,7 @@ const OurMedia = () => {
             <h4 className="headline">
               Lorem ipsum dolor sit amet consectetur.
             </h4>
-            <button className="read-more-btn">Ətraflı oxu</button>
+            <Button title='Ətraflı oxu' />
           </div>
         </div>
         <div className="media-cards">

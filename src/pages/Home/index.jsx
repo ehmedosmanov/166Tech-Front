@@ -5,6 +5,9 @@ import Companies from "../../components/HomeComponents/Companies";
 import CompanyServices from "../../components/HomeComponents/CompanyServices";
 import AutoParkSection from "../../components/HomeComponents/AutoParkSection";
 import OurMedia from "../../components/HomeComponents/OurMedia";
+import BannerSection from "../../components/HomeComponents/BannerSection";
+import ContriesWeWork from "../../components/HomeComponents/CountriesWeWork";
+import CustomerReviews from "../../components/HomeComponents/CustomerReviews";
 
 const Home = () => {
   return (
@@ -15,6 +18,9 @@ const Home = () => {
       <CompanyServices />
       <AutoParkSection />
       <OurMedia />
+      <CustomerReviews/>
+      <ContriesWeWork/>
+      <BannerSection/>
     </>
   );
 };

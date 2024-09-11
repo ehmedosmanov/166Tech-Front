@@ -1,0 +1,49 @@
+.team-member-card {
+    width: 400px;
+    margin-bottom: 30px; 
+    border-radius: 8px;
+    overflow: hidden;
+  
+    .person-image {
+      border: 1px solid #a9a9ab5d;
+      border-radius: 8px;
+      overflow: hidden;
+      width: 100%;
+      height: 400px; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        filter: grayscale(100%); 
+        transition: filter 0.4s ease; 
+      }
+  
+      &:hover img {
+        filter: grayscale(0%);
+        cursor: pointer; 
+      }
+    }
+  
+    .person-name {
+      color: #111827;
+      font-size: 18px;
+      font-weight: 500;
+      margin-top: 15px;
+    }
+  
+    .person-position {
+      color: #4C4C4C;
+      margin-top: 5px;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .team-member-card {
+       width: 300px;
+    }
+  }

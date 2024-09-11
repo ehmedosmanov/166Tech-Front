@@ -28,7 +28,7 @@ const DropdownItem = ({ text, menuName, openMenu, toggleDropdown }) => {
           <Link>Haqqımızda</Link>
         </li>
         <li>
-          <Link>Bizim komanda</Link>
+          <Link to={'/our-team'}>Bizim komanda</Link>
         </li>
       </ul>
     </li>

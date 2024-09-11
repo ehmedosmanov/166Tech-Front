@@ -1,0 +1,18 @@
+.page-title{
+    margin: 30px 0;
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+    .title-line{
+        width: 60px;
+        height: 2px;
+        background-color: #ffcc4d;
+        display: inline-flex;
+        margin-right: 10px;
+    }
+
+    .title-name{
+        font-size: clamp(1.5625rem, 1.4432rem + 0.6364vw, 2rem);
+        font-weight: 600;
+    }
+}
