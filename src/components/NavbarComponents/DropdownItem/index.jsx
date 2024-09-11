@@ -25,10 +25,10 @@ const DropdownItem = ({ text, menuName, openMenu, toggleDropdown }) => {
       </Link>
       <ul className={`dropdown-menu ${openMenu === menuName ? "active" : ""}`}>
         <li>
-          <Link>About Us</Link>
+          <Link>Haqqımızda</Link>
         </li>
         <li>
-          <Link>Our Team</Link>
+          <Link>Bizim komanda</Link>
         </li>
       </ul>
     </li>

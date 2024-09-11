@@ -1,0 +1,50 @@
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 35px;
+
+  h3 {
+    font-size: clamp(24px, 4vw, 48px);
+    color: #001d5b;
+    font-weight: 600;
+  }
+
+  .view-all {
+    padding-top: 12px;
+    font-size: clamp(16px, 2vw, 20px);
+    color: #ffcc4d;
+  }
+}
+
+.truck-slider {
+  padding: 40px 0;
+  .swiper-wrapper {
+    height: 280px;
+    width: 100%;
+  }
+  .auto-card {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 8px;
+    padding: 15px 25px;
+    display: flex;
+    flex-direction: column-reverse;
+
+    .auto-content {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-direction: column;
+
+      h3 {
+        font-weight: 600;
+        font-size: 20px;
+      }
+
+      p {
+        color: #98999a;
+      }
+    }
+  }
+}

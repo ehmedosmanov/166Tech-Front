@@ -1,0 +1,95 @@
+.our-media {
+  padding: 80px 0;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .top-block {
+    position: relative;
+    background-image: url("https://www.ei-ie.org/image/1a83b.jpg/lead.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+    }
+
+    .block-content {
+      position: relative;
+      z-index: 1;
+      color: #fff;
+
+      .date {
+        font-size: 14px;
+        margin-bottom: 10px;
+        display: block;
+      }
+
+      .headline {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        line-height: 1.2;
+        max-width: 500px;
+      }
+
+      .read-more-btn {
+        background-color: #f4c542;
+        border: none;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: #d39b04;
+        }
+      }
+    }
+  }
+}
+
+.media-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    .media-card {
+      max-width: 100%;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    .media-card {
+      max-width: 48%;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .media-card {
+      max-width: 30%;
+    }
+  }
+}
